@@ -8,4 +8,7 @@ def test_function_of_one_string():
     assert add('1') == 1
 
 def test_function_of_two_strings():
-    assert add('1,2') == 3     
+    assert add('1,2') == 3   
+
+def test_function_of_delimeters():
+    assert add('1\n2,3') == 6     
