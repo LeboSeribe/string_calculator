@@ -12,9 +12,11 @@ def add(string):
         return 0  
 
     for each_number in numbers:
+        neg_list =[]
         number = int(each_number)
         if number < 0:
-            return "negative numbers"
+            neg_list.append(numbers)
+            return neg_list
         if number>=0 :    
                 my_sum += number
         # if :
@@ -26,11 +28,11 @@ def add(string):
 
 
 print(add(''))
-print(add('1,1'))
-print(add('1,2'))
-print(add('1\n2,3'))
-print(add('1,\n'))
-print(add('//;\n1;2'))
+# print(add('1,1'))
+# print(add('1,2'))
+# print(add('1\n2,3'))
+# print(add('1,\n'))
+# print(add('//;\n1;2'))
 print(add('-5,-4'))
 #all the first conditions passed
 

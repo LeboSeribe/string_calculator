@@ -11,4 +11,8 @@ def test_function_of_two_strings():
     assert add('1,2') == 3   
 
 def test_function_of_delimeters():
-    assert add('1\n2,3') == 6     
+    assert add('1\n2,3') == 6
+
+def test_function_of_negatives():
+    assert add('-5,-4') == "negative numbers"
+
